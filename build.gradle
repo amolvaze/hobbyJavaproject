@@ -1,0 +1,36 @@
+plugins {
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '6.0.0'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+  
+  
+     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.11.2'
+     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.2'
+     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.2'
+     
+     implementation group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.31'
+     implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.31'
+     implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.31'
+     
+    
+}
+
+mainClassName = 'foodtruckfinder.FoodTruckFinder'
+
+run {
+	standardInput = System.in
+}
+
+
+
+
+
+
+
+
