@@ -12,3 +12,4 @@ This will download gradle if necessary and also download all the dependencies.
 java -jar build/libs/FoodTruckFinder-all.jar
 
 
+
